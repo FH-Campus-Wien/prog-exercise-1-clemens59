@@ -7,31 +7,87 @@ public class App {
     //todo Task 1
     public void sayHelloWorld(){
         // input your solution here
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
         // input your solution here
+        System.out.println("0123456789012345678901\n"+
+                "         __\n"+
+                " _(\\    |@@|\n"+
+                "(__/\\__ \\--/ __\n"+
+                "   \\___|----|  |   __\n"+
+                "       \\ }{ /\\ )_ / _\\\n"+
+                "       /\\__/\\ \\__O (__\n"+
+                "      (--/\\--)    \\__/\n"+
+                "      _)(  )(_\n"+
+                "     `---''---`");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
         // input your solution here
+        char z = 'Z';
+        int hexa = 0xface;
+        int a = 012;
+        long l = 80L;
+        float f =  44e-1f;
+        float f2 =  5.5f;
+        double d = 8.88e1;
+        double d2 = 99.9;
+
+        int sum = z + hexa + a + (int)l + (int)f + (int)f2 + (int)d + (int)d2;
+
+        System.out.println(sum);
     }
 
     //todo Task 4
     public void addTwoNumbers(){
         // input your solution here
+        Scanner input = new Scanner(System.in);
+
+        int a = input.nextInt();
+        int b = input.nextInt();
+
+        int sum = a+b;
+
+        System.out.println(sum);
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
         // input your solution here
+
+        Scanner input1 = new Scanner(System.in);
+
+        int x = input1.nextInt();
+        int y = input1.nextInt();
+
+        x = x + y;
+        y = x - y;
+        x = x - y;
+
+        System.out.println("Before Swap:\n" + "x: " + "y: "+"After Swap:\n" + "x: " + x + "\n" + "y: " + y);
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
+        Scanner input = new Scanner(System.in);
+
+        int n1 = input.nextInt();
+        int n2 = input.nextInt();
+
+        if(n1>n2){
+            System.out.println("n1: "+"n2: "+"n1 > n2");
+        }else{
+            System.out.println("n1: "+"n2: "+"n1 < n2");
+        }
+        if(n1==n2){
+            System.out.println("n1: "+"n2: "+"n1 == n2");
+        }
+
     }
 
     //todo Task 7
